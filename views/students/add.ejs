@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Student</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Add New Student</div>
+                    <div class="card-body">
+                        <form action="/students" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="college">College</label>
+                                <input type="text" id="college" name="college" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Status</label>
+                                <select id="status" name="status" class="form-control" required>
+                                    <option value="placed">Placed</option>
+                                    <option value="not_placed">Not Placed</option>
+                                </select>
+                            </div>
+                            <!-- Scores -->
+                            <div class="form-group">
+                                <label for="DSAFinalScore">DSA Final Score</label>
+                                <input type="number" id="DSAFinalScore" name="DSAFinalScore" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="WebDFinalScore">WebD Final Score</label>
+                                <input type="number" id="WebDFinalScore" name="WebDFinalScore" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ReactFinalScore">React Final Score</label>
+                                <input type="number" id="ReactFinalScore" name="ReactFinalScore" class="form-control" required>
+                            </div>
+                            <!-- End of Scores -->
+                            <button type="submit" class="btn btn-primary">Add Student</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
