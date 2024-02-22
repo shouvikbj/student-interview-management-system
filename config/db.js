@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // MongoDB connection URL
-const mongoURI = 'mongodb://localhost:27017/career_camp_db';
+const mongoURI = 'mongodb+srv://gangpayee:MaaThakur60@cluster0.4raiqsk.mongodb.net/career_camp_db';
 
 // Connect to MongoDB
 const connectDB = async () => {
