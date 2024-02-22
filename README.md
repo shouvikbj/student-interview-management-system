@@ -23,9 +23,12 @@ The Team Career Camp Student Interview Management System is a web application de
 
 ## Installation
 
-1. Clone the repository to your local machine
+1. Clone the repository to your local machine:
+
+git clone https://github.com/shouvikbj/student-interview-management-system.git
 
 2. Navigate to the project directory:
+
 cd student-interview-management-system
 
 3. Install dependencies:
